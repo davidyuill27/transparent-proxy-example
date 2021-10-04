@@ -1,0 +1,15 @@
+dotenv: .env
+
+wallets:
+  from_key: ${PRIVATE_KEY}
+
+dependencies:
+  # - <organisation/repo>@<version>
+  - smartcontractkit/chainlink-brownie-contracts@0.2.1
+  - OpenZeppelin/openzeppelin-contracts@4.3.2
+
+compiler:
+  solc:
+    remappings:
+      - '@chainlink=smartcontractkit/chainlink-brownie-contracts@0.2.1'
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.3.2'
