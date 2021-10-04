@@ -1,6 +1,6 @@
 from brownie import Box, BoxV2, BoxAdmin, BoxProxy, exceptions
 from brownie.network.contract import Contract
-from scripts.account_utils import encode_function_data, get_account, upgrade
+from scripts.utils import encode_function_data, get_account, upgrade
 import pytest
 
 

@@ -1,6 +1,6 @@
-from brownie import Box, BoxV2, BoxAdmin, BoxProxy
+from brownie import Box, BoxAdmin, BoxProxy
 from brownie.network.contract import Contract
-from scripts.account_utils import encode_function_data, get_account
+from scripts.utils import encode_function_data, get_account
 
 
 def test_proxy_delegates_calls():
